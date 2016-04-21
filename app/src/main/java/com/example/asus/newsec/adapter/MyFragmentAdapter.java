@@ -9,11 +9,11 @@ import com.example.asus.newsec.bin.TabFragment;
 import java.util.List;
 
 /**
- * Created by Asus on 2016/4/18.
+ * Created by Asus on 2016/4/19.
  */
-public class MyChirldAdapter extends FragmentStatePagerAdapter {
+public class MyFragmentAdapter extends FragmentStatePagerAdapter {
     private List<TabFragment> list;
-    public MyChirldAdapter(FragmentManager fm, List<TabFragment> list) {
+    public MyFragmentAdapter(FragmentManager fm, List<TabFragment> list) {
         super(fm);
         this.list = list;
     }
@@ -27,9 +27,9 @@ public class MyChirldAdapter extends FragmentStatePagerAdapter {
     public int getCount() {
         return list.size();
     }
+
     @Override
     public CharSequence getPageTitle(int position) {
-        return  list.get(position).getList();
+        return list.get(position).getList();
     }
-
 }

@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mRadioGroup = (RadioGroup) findViewById(R.id.group_button);
-        mRadioButton1 = (RadioButton) findViewById(R.id.new_button);
-        mRadioButton2 = (RadioButton) findViewById(R.id.read_button);
-        mRadioButton3 = (RadioButton) findViewById(R.id.movie_button);
-        mRadioButton4 = (RadioButton) findViewById(R.id.talk_button);
-        mRadioButton5 = (RadioButton) findViewById(R.id.me_button);
+//        mRadioButton1 = (RadioButton) findViewById(R.id.new_button);
+//        mRadioButton2 = (RadioButton) findViewById(R.id.read_button);
+//        mRadioButton3 = (RadioButton) findViewById(R.id.movie_button);
+//        mRadioButton4 = (RadioButton) findViewById(R.id.talk_button);
+//        mRadioButton5 = (RadioButton) findViewById(R.id.me_button);
         frameLayout = (FrameLayout) findViewById(R.id.mHomeContent);
         mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    //设置第一个按钮为默认选择
     @Override
     protected void onStart() {
         super.onStart();

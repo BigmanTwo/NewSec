@@ -27,7 +27,7 @@ public class ListFragment extends Fragment implements AdapterView.OnItemClickLis
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.listview_style,null);
-        listView=(ListView)view.findViewById(R.id.list_viewpager);
+        listView=(ListView)view.findViewById(R.id.list_view);
         listView.setOnItemClickListener(this);
         list=new ArrayList<>();
         for(int i=0;i<20;i++){
@@ -43,8 +43,10 @@ public class ListFragment extends Fragment implements AdapterView.OnItemClickLis
         return view;
     }
 
+
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
     }
+
 }

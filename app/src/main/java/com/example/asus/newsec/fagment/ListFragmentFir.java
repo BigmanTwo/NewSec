@@ -30,7 +30,7 @@ public class ListFragmentFir extends Fragment implements AdapterView.OnItemClick
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.listview_style,null);
-        listView=(ListView)view.findViewById(R.id.list_viewpager);
+        listView=(ListView)view.findViewById(R.id.list_view);
         listView.setOnItemClickListener(this);
 
         list=new ArrayList<>();
