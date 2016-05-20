@@ -2,7 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-<ListView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:id="@+id/layout">
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/scanner_pagers"
+            android:focusable="true" />
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/viewgroup"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
     android:id="@+id/list_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"></ListView>

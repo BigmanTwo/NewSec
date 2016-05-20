@@ -28,8 +28,8 @@ public class ReadFragmentFirst extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.listview_style,null);
-        mListView=(ListView)view.findViewById(R.id.list_view);
+        View view=inflater.inflate(R.layout.listview_style_two,null);
+        mListView=(ListView)view.findViewById(R.id.listView_style_two);
         mList=new ArrayList<>();
         mList.add(new ReadTypeOne(R.mipmap.caocao,"国家版权局：不付费使用音乐作品的时代过去了","新浪网"));
         mList.add(new ReadTypeOne(R.mipmap.caocao,"国家版权局：不付费使用音乐作品的时代过去了","新浪网"));
